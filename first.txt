@@ -1,1 +1,14 @@
-Over Written changes;
+using System.IO;
+
+Directory.CreateDirectory(@"D:\Documents\Consolidated\RRR"); //4 create folder
+File.Create(@"D:\SampleFolder\a.txt"); // 4 create file
+
+bool ext = Directory.Exists(@"D:\Documents\"); // 4 find folder existance
+bool ext = File.Exists(@"D:\SampleFolder\a.txt") // 4 find file existance
+
+var files = Directory.GetFileSystemEntries(@"D:\Documents\"); //4 folders & files
+var file = Directory.GetDirectories(@"D:\Documents\"); // 4 folders
+var file = Directory.GetFiles(@"D:\Documents\"); // 4 files
+
+Path.GetFileName(item); // 4 get only file name
+var file = Directory.GetFiles(@"D:\Documents\", "New*.txt"); // 4 get files with filter
