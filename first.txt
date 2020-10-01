@@ -12,3 +12,4 @@ var file = Directory.GetFiles(@"D:\Documents\"); // 4 files
 
 Path.GetFileName(item); // 4 get only file name
 var file = Directory.GetFiles(@"D:\Documents\", "New*.txt"); // 4 get files with filter
+>>>>>>>>>>>>>>>>>>>
